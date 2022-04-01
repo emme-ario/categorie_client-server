@@ -1,0 +1,14 @@
+[
+  {
+    "category": "sport",
+    "activities": ["football", "basketball", "volleyball", "cricket"]
+  },
+  {
+    "category": "homework",
+    "activities": ["maths", "history", "computer science", "GPO"]
+  },
+  {
+    "category": "free time",
+    "activities": ["reading", "hang out", "betting", "videogames"]
+  }
+]
