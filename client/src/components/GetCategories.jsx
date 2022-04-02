@@ -19,7 +19,7 @@ const PUTCategory = (id, newName) => {
 };
 
 const CategoryElement = ({ element }) => {
-  const { UpdateCategories } = useContext(CategoryCtx);
+  const { UpdateCategories, UpdateActivities } = useContext(CategoryCtx);
   const [newCategoryName, setNewCategoryName] = useState("");
   return (
     <tr>
@@ -60,6 +60,7 @@ const CategoryElement = ({ element }) => {
               .then((r) => r.json())
               .then(() => {
                 UpdateCategories();
+                UpdateActivities();
                 console.log(`Deleted category with id "${element.id}"`);
               });
           }}

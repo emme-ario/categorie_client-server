@@ -36,7 +36,7 @@ function App() {
       >
         <div>
           <CategoryCtx.Provider
-            value={{ categories, setCategories, UpdateCategories }}
+            value={{ categories, setCategories, UpdateCategories, UpdateActivities }}
           >
             <GetCategories />
             <br></br>

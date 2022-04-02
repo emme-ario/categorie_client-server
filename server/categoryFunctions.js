@@ -1,6 +1,8 @@
 const sqlite3 = require("sqlite3").verbose();
 const database = new sqlite3.Database("./prova.db");
 
+database.all("PRAGMA foreign_keys = ON");
+
 const getCategories = (req, res) => {
   database.all("SELECT * FROM category", (err, rows) => {
     if (err) res.json([]);

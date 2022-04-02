@@ -18,7 +18,8 @@ const GetCategoryName = (id, setCategoryName) => {
     });
 };
 
-const ActivityElement = ({ element }, { category }) => {
+const ActivityElement = ({ element }) => {
+  // console.log(element.name);
   const { UpdateActivities } = useContext(ActivityCtx);
   const [categoryName, setCategoryName] = useState(element.category_id);
   GetCategoryName(element.category_id, setCategoryName);
